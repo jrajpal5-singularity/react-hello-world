@@ -1,7 +1,8 @@
 import './App.css';
 import { Component } from 'react';
 
-import ParentComponent from './components/ParentComponent';
+
+import UserGreeting from './components/UserGreeting';
 
 // import {Greet} from './components/Greet';
 // function App() {
@@ -32,7 +33,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <ParentComponent />
+      <UserGreeting />
 
     </div>
   );
