@@ -1,7 +1,7 @@
 import './App.css';
 import { Component } from 'react';
 
-import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 // import {Greet} from './components/Greet';
 // function App() {
@@ -32,7 +32,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <EventBind/>
+      <ParentComponent />
 
     </div>
   );
