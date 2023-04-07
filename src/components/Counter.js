@@ -11,7 +11,8 @@ class Counter extends Component {
         // this.setState({count:this.state.count+1},()=>console.log('callback value',this.state.count))
         this.setState((prevState)=>({
             count:prevState.count+1
-        }))
+        }
+        ))
         console.log(this.state.count)
         // never modify state directly rather use setstate
         // dont place console log after setstate rather use callback of setstate
