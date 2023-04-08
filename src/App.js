@@ -2,7 +2,7 @@ import './App.css';
 import { Component } from 'react';
 
 
-import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 // import {Greet} from './components/Greet';
 // function App() {
@@ -33,7 +33,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <UserGreeting />
+      <NameList />
 
     </div>
   );
@@ -41,3 +41,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
