@@ -31,6 +31,7 @@ import Person from './Person'
 function NameList() {
   // key help react to identify different element of list
   // keys give elements stable identity
+  const names = ['Bruce','Clark','Diana','Bruce']
   const persons = [
     {
       id:1,
@@ -45,10 +46,13 @@ function NameList() {
       name:'Diana',age:28, skill:'Vue'
     }
   ]
+  // https://codepen.io/gopinav/pen/gQpepq
   const personList = persons.map(person => <Person key={person.id} person={person} />)
+  const nameList = names.map((name,index) => <h2 key={index}>{index} : {name}</h2>)
   return (
   <div>
-      {personList}
+      {/* {personList} */}
+      {nameList}
   </div>
 )
 }
