@@ -29,7 +29,8 @@ import Person from './Person'
 
 // method 3
 function NameList() {
-  
+  // key help react to identify different element of list
+  // keys give elements stable identity
   const persons = [
     {
       id:1,
@@ -44,7 +45,7 @@ function NameList() {
       name:'Diana',age:28, skill:'Vue'
     }
   ]
-  const personList = persons.map(person => <Person person={person} />)
+  const personList = persons.map(person => <Person key={person.id} person={person} />)
   return (
   <div>
       {personList}
