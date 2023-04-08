@@ -2,7 +2,12 @@ import './App.css';
 import { Component } from 'react';
 
 
-import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+
+import './appStyles.css'
+import styles from './appStyles.module.css'
+
 
 // import {Greet} from './components/Greet';
 // function App() {
@@ -33,7 +38,10 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <NameList />
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+    <Inline/>
+
 
     </div>
   );
